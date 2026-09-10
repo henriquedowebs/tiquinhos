@@ -1,253 +1,667 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banho, Tosa e Pet Shop na Bela Vista, Guarulhos | Tiquinho's Pet</title>
-    <meta name="description" content="O melhor banho e tosa de Guarulhos! No Espaço Tiquinho's Pet oferecemos estética animal de alta qualidade e carinho para seu cão ou gato na Bela Vista.">
-    
-    <!-- Google Fonts: Outfit -->
+    <title>Espaço Tiquinho's Pet | Banho, Tosa e Estética Animal em Guarulhos</title>
+    <meta name="description"
+        content="No Espaço Tiquinho's Pet oferecemos estética pet de alta qualidade com profissionais de confiança no Bom Clima, Guarulhos. Banho completo, tosa e muito carinho.">
+    <link rel="canonical" href="https://tiquinhospet.com.br/">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tiquinho's Pet - Banho e Tosa no Bom Clima, Guarulhos">
+    <meta property="og:description"
+        content="Estética animal premium, carinho e cuidado de verdade para o seu cão ou gato. Agende seu horário pelo WhatsApp!">
+    <meta property="og:image" content="images/hero-pets.png">
+
+    <!-- Google Fonts: Outfit & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
     <!-- 0. Top Bar -->
     <div class="top-bar">
-        <div class="container">
-            <span>📍 Pet Shop e Estética Animal na Bela Vista, Guarulhos | 🕒 Seg a Sáb: 09h às 18h</span>
-            <span>📞 (11) 97872-8736</span>
+        <div class="container top-bar-inner">
+            <span class="top-bar-info">📍 Av. José Antônio Zeraibe, 207 - Jardim Bom Clima | 🕒 Seg a Sáb: 09h às
+                18h</span>
+            <a href="tel:11978728736" class="top-bar-phone">📞 (11) 97872-8736</a>
         </div>
     </div>
 
     <!-- 1. Header -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                🐾 Tiquinho's<span>Pet</span>
-            </div>
-            <nav class="nav-links">
-                <a href="#servicos">Serviços</a>
-                <a href="#diferenciais">Diferenciais</a>
-                <a href="#avaliacoes">Avaliações</a>
-                <a href="#duvidas">Dúvidas</a>
-                <a href="#contato">Contato</a>
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="header-logo" aria-label="Tiquinho's Pet Início">
+                <img src="images/logo.svg" alt="Tiquinho's Pet" width="264" height="59" class="logo-img">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-links" id="navLinks" aria-label="Navegação Principal">
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#diferenciais" class="nav-link">Diferenciais</a>
+                <a href="#galeria" class="nav-link">Galeria</a>
+                <a href="#avaliacoes" class="nav-link">Avaliações</a>
+                <a href="#duvidas" class="nav-link">Dúvidas</a>
+                <a href="#contato" class="nav-link">Contato</a>
             </nav>
-            <button class="btn-primary">Falar com Especialista</button>
+
+            <div class="header-actions">
+                <a href="https://wa.me/5511978728736?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Espa%C3%A7o%20Tiquinho's%20Pet."
+                    target="_blank" rel="noopener noreferrer" class="btn-whatsapp header-btn">
+                    <img src="images/whatsapp-icon.png" alt="WhatsApp" width="24" height="24">
+                    <span>Agende Agora Mesmo</span>
+                </a>
+
+                <!-- Mobile Hamburger Button -->
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu de Navegação"
+                    aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
         </div>
     </header>
 
-    <!-- 2. Hero Block -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <span class="hero-badge">🐾 O Melhor Banho e Tosa de Guarulhos</span>
-                <h1>Banho, Tosa e Muito Carinho para o Seu Pet na Bela Vista, Guarulhos</h1>
-                <p>No <strong>Espaço Tiquinho's Pet</strong>, oferecemos estética animal de alta qualidade com profissionais de confiança. Garantimos a segurança, a higiene e o bem-estar do seu melhor amigo em cada detalhe do atendimento.</p>
-                <button class="btn-primary">💬 Falar com Especialista</button>
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <div class="mobile-drawer-content">
+            <nav class="mobile-nav">
+                <a href="#servicos" class="mobile-nav-link">Serviços</a>
+                <a href="#diferenciais" class="mobile-nav-link">Diferenciais</a>
+                <a href="#galeria" class="mobile-nav-link">Galeria</a>
+                <a href="#avaliacoes" class="mobile-nav-link">Avaliações</a>
+                <a href="#duvidas" class="mobile-nav-link">Dúvidas</a>
+                <a href="#contato" class="mobile-nav-link">Contato</a>
+            </nav>
+            <div class="mobile-drawer-footer">
+                <a href="https://wa.me/5511978728736?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Espa%C3%A7o%20Tiquinho's%20Pet."
+                    target="_blank" rel="noopener noreferrer" class="btn-whatsapp mobile-cta">
+                    <img src="images/whatsapp-icon.png" alt="WhatsApp" width="24" height="24">
+                    <span>Agende Agora Mesmo</span>
+                </a>
+                <p class="mobile-contact-note">📍 Bom Clima - Guarulhos</p>
             </div>
-            <div class="hero-image" aria-label="Cachorro feliz e limpo após banho e tosa no pet shop em Guarulhos">
-                [ Imagem: Foto Hero Placeholder ]
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. Authority Strip -->
-    <div class="authority">
-        <div class="container">
-            <span>⭐️⭐️⭐️⭐️⭐️ Avaliação 5.0 no Google</span>
-            <span>|</span>
-            <span>Aprovado por centenas de tutores de pets na região de Guarulhos</span>
         </div>
     </div>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
 
-    <!-- 4. Solutions Grid -->
-    <section id="servicos" class="solutions">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-title">Soluções Completas de Estética Animal e Pet Shop</h2>
-            </div>
-            <div class="solutions-grid">
-                <div class="card">
-                    <div class="card-icon">🛁</div>
-                    <h3>Banho Completo e Hidratação</h3>
-                    <p>Utilizamos apenas produtos cosméticos premium. Água na temperatura ideal e secagem cuidadosa para garantir a saúde da pele e o brilho da pelagem do seu cão ou gato.</p>
-                    <a href="#" class="card-link">Falar com Especialista ➔</a>
-                </div>
-                <div class="card">
-                    <div class="card-icon">✂️</div>
-                    <h3>Tosa Especializada</h3>
-                    <p>Tosa higiênica, tosa na máquina ou na tesoura (padrão da raça). Um acabamento estético perfeito, feito com paciência e sem causar estresse ao animal.</p>
-                    <a href="#" class="card-link">Falar com Especialista ➔</a>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🛍️</div>
-                    <h3>Pet Shop e Conveniência</h3>
-                    <p>Precisando repor algo rápido? Oferecemos acessórios, roupinhas, rações e produtos de higiene de marcas confiáveis para a rotina do seu pet.</p>
-                    <a href="#" class="card-link">Falar com Especialista ➔</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. Differentials -->
-    <section id="diferenciais" class="differentials">
-        <div class="container diff-container">
-            <div class="diff-content">
-                <h2 class="section-title">Por que o Espaço Tiquinho's Pet é a Escolha Certa para o Seu Pet?</h2>
-            </div>
-            <div class="diff-grid">
-                <div class="diff-item">
-                    <span class="icon">🛡️</span>
-                    <h4>Segurança em 1º Lugar</h4>
-                    <p>Profissionais experientes e estrutura rigorosamente limpa e adaptada para evitar fugas ou estresse.</p>
-                </div>
-                <div class="diff-item">
-                    <span class="icon">❤️</span>
-                    <h4>Atendimento Humanizado</h4>
-                    <p>Mais do que estética, entregamos carinho de verdade. Respeitamos o tempo, a sensibilidade e a personalidade de cada cão ou gato.</p>
-                </div>
-                <div class="diff-item">
-                    <span class="icon">📍</span>
-                    <h4>Localização Privilegiada</h4>
-                    <p>Fácil acesso e conveniência para moradores do bairro Bela Vista e arredores, em Guarulhos.</p>
-                </div>
-                <div class="diff-item">
-                    <span class="icon">✨</span>
-                    <h4>Produtos de Alta Performance</h4>
-                    <p>Usamos linhas de banho hipoalergênicas e específicas para cada tipo de pelo, evitando alergias.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6. Gallery -->
-    <section class="gallery">
-        <div class="container text-center">
-            <h2 class="section-title">Conheça a Estrutura do Tiquinho's Pet em Guarulhos</h2>
-            <br>
-            <div class="gallery-grid">
-                <div class="gallery-item">[ Imagem: Fachada ]</div>
-                <div class="gallery-item">[ Imagem: Área de Banho ]</div>
-                <div class="gallery-item">[ Imagem: Produtos ]</div>
-                <div class="gallery-item">[ Imagem: Pet Feliz ]</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 7. Testimonials -->
-    <section id="avaliacoes" class="testimonials">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-title">O Que os Tutores de Pets de Guarulhos Dizem Sobre Nós?</h2>
-            </div>
-            <div class="test-grid">
-                <div class="test-card">
-                    <div class="test-stars">★★★★★</div>
-                    <p class="test-text">"Excelente atendimento! Levo meu cachorro lá sempre e ele volta limpinho, cheiroso e super tranquilo. Recomendo de olhos fechados na Bela Vista."</p>
-                    <span class="test-author">- Tutor Satisfeito</span>
-                </div>
-                <div class="test-card">
-                    <div class="test-stars">★★★★★</div>
-                    <p class="test-text">"Profissionais muito atenciosos. A tosa do meu poodle ficou perfeita e o cuidado que eles têm passa muita segurança."</p>
-                    <span class="test-author">- Tutor Satisfeito</span>
-                </div>
-                <div class="test-card">
-                    <div class="test-stars">★★★★★</div>
-                    <p class="test-text">"O melhor banho e tosa de Guarulhos. Estrutura impecável e preço justo pelo carinho que entregam."</p>
-                    <span class="test-author">- Tutor Satisfeito</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 8. Location -->
-    <section id="contato" class="location">
-        <div class="container">
-            <div class="loc-container">
-                <div class="loc-map">
-                    [ Imagem: Mapa Google Maps Placeholder ]
-                </div>
-                <div class="loc-info">
-                    <h3>Onde Encontrar o Melhor Banho e Tosa na Bela Vista, Guarulhos?</h3>
-                    <p>Nosso espaço foi projetado para acolher seu pet com total conforto. Venha nos fazer uma visita ou agende seu horário pelo WhatsApp.</p>
-                    <div class="loc-details">
-                        <strong>Endereço:</strong> Rua Birmânia, 96 - Bela Vista, Guarulhos - SP, 07133-000.<br><br>
-                        <strong>Horário de Funcionamento:</strong> Segunda a Sábado: 09:00 às 18:00.
+    <main id="main-content">
+        <!-- 2. Hero Section -->
+        <section class="hero" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span>🐾 Mais de 500 pets atendidos no Bom Clima</span>
                     </div>
-                    <button class="btn-primary">📍 Como Chegar</button>
+                    <h1 class="hero-title">
+                        Seu Pet precisa de<br>
+                        Banho e Tosa no<br>
+                        Bom Clima - Guarulhos
+                    </h1>
+                    <p class="hero-description">
+                        No Espaço Tiquinho's Pet, oferecemos estética pet de alta qualidade com profissionais de
+                        confiança.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="https://wa.me/5511978728736?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Espa%C3%A7o%20Tiquinho's%20Pet."
+                            target="_blank" rel="noopener noreferrer" class="btn-whatsapp hero-whatsapp-btn">
+                            <img src="images/whatsapp-icon.png" alt="WhatsApp" width="24" height="24">
+                            <span>Agende Agora Mesmo</span>
+                        </a>
+                        <span class="hero-microcopy">Estamos no Bom Clima, bem perto de você</span>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- 9. FAQ -->
-    <section id="duvidas" class="faq">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-title">Dúvidas Frequentes sobre nosso Pet Shop e Estética Animal</h2>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">O Espaço Tiquinho's Pet em Guarulhos atende gatos para banho e tosa? <span>+</span></div>
-                    <div class="faq-answer">Sim! No Tiquinho's Pet nós realizamos banho e tosa para gatos com horários especiais e equipe treinada para garantir um manejo tranquilo e focado no bem-estar felino.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Preciso agendar o banho e tosa do meu pet com antecedência? <span>+</span></div>
-                    <div class="faq-answer">Recomendamos o agendamento prévio pelo nosso WhatsApp para garantir que o seu pet seja atendido no melhor horário, evitando esperas e garantindo exclusividade.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Quais produtos são utilizados durante o banho? <span>+</span></div>
-                    <div class="faq-answer">Utilizamos apenas marcas premium de cosmética animal, incluindo shampoos e condicionadores hipoalergênicos e adequados para diferentes tipos de pelagem e peles sensíveis.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Onde fica exatamente o Tiquinho's Pet? <span>+</span></div>
-                    <div class="faq-answer">Estamos localizados na Rua Birmânia, 96, no bairro Bela Vista, na cidade de Guarulhos - SP.</div>
+                <div class="hero-visual">
+                    <div class="hero-circle-bg" aria-hidden="true"></div>
+                    <div class="hero-promo-pill">
+                        <span class="pill-tag">Destaque</span>
+                        <span class="pill-text">Banho & Estética Humanizada</span>
+                    </div>
+                    <div class="hero-img-wrapper">
+                        <img src="images/hero-pets.png" alt="Cão e gato felizes e bem cuidados no Espaço Tiquinho's Pet"
+                            class="hero-img" width="710" height="579">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- 2.1 Floating Value Props (Inspirado na Referência) -->
+        <section class="floating-props-section" aria-label="Diferenciais em Destaque">
+            <div class="container">
+                <div class="floating-props-grid">
+                    <div class="prop-card">
+                        <div class="prop-icon">🧴</div>
+                        <div class="prop-text">
+                            <h4>Cosméticos Premium</h4>
+                            <p>Linhas hipoalergênicas Hydra e hidratação profunda</p>
+                        </div>
+                    </div>
+                    <div class="prop-connector" aria-hidden="true"></div>
+                    <div class="prop-card">
+                        <div class="prop-icon">❤️</div>
+                        <div class="prop-text">
+                            <h4>Manejo Gentil</h4>
+                            <p>Paciência e carinho, sem gaiolas nem estresse</p>
+                        </div>
+                    </div>
+                    <div class="prop-connector" aria-hidden="true"></div>
+                    <div class="prop-card">
+                        <div class="prop-icon">⏰</div>
+                        <div class="prop-text">
+                            <h4>Hora Marcada</h4>
+                            <p>Exclusividade e pontualidade para o seu pet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Authority Strip -->
+        <section class="authority-strip" aria-label="Avaliações e Prova Social">
+            <div class="container authority-container">
+                <p class="authority-text">
+                    ⭐️⭐️⭐️⭐️⭐️ Avaliação 5.0 no Google &nbsp;|&nbsp; Aprovado por centenas de tutores de pets na região
+                    de Guarulhos
+                </p>
+            </div>
+        </section>
+
+        <!-- 4. Solutions / Services Grid com Chips e Card Destaque -->
+        <section id="servicos" class="solutions-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Soluções Completas de Estética Animal e Pet Shop</h2>
+                    <p class="section-subtitle">Escolha o melhor cuidado para o seu melhor amigo</p>
+
+                    <!-- Chips de Categoria (Inspirados na Referência) -->
+                    <div class="category-chips" id="categoryChips">
+                        <button class="chip-btn active" data-category="all">Todos os Serviços</button>
+                        <button class="chip-btn" data-category="caes">Para Cães</button>
+                        <button class="chip-btn" data-category="gatos">Para Gatos</button>
+                        <button class="chip-btn" data-category="petshop">Pet Shop</button>
+                    </div>
+                </div>
+
+                <div class="solutions-grid" id="solutionsGrid">
+                    <!-- Service 1: Featured Highlight Card (Inspirado no Card Amarelo Sólido da Referência) -->
+                    <article class="service-card featured-gold" data-category="caes gatos">
+                        <div class="featured-badge">⭐ Mais Escolhido</div>
+                        <div class="service-icon-wrapper">
+                            <img src="images/icon-bathtub.png" alt="Ícone Banho e Hidratação" width="32" height="32"
+                                class="service-icon">
+                        </div>
+                        <div class="service-info">
+                            <h3 class="service-name">Banho Completo e Hidratação</h3>
+                            <p class="service-text">
+                                Utilizamos apenas cosméticos premium Hydra. Água aquecida na temperatura ideal, secagem
+                                cuidadosa e hidratação profunda que deixa o pelo macio, brilhante e cheiroso por muito
+                                mais tempo.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/5511978728736?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Espa%C3%A7o%20Tiquinho's%20Pet."
+                            target="_blank" rel="noopener noreferrer" class="btn-whatsapp service-card-btn">
+                            <img src="images/whatsapp-icon.png" alt="WhatsApp" width="24" height="24">
+                            <span>Agende Agora Mesmo</span>
+                        </a>
+                    </article>
+
+                    <!-- Service 2 -->
+                    <article class="service-card" data-category="caes">
+                        <div class="service-icon-wrapper">
+                            <img src="images/icon-grooming.png" alt="Ícone Tosa Especializada" width="32" height="32"
+                                class="service-icon">
+                        </div>
+                        <div class="service-info">
+                            <h3 class="service-name">Tosa Especializada</h3>
+                            <p class="service-text">
+                                Tosa higiênica, tosa na máquina ou na tesoura (padrão da raça). Um acabamento estético
+                                perfeito, feito com paciência e sem causar estresse ao animal.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/5511978728736?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Espa%C3%A7o%20Tiquinho's%20Pet."
+                            target="_blank" rel="noopener noreferrer" class="btn-whatsapp service-card-btn">
+                            <img src="images/whatsapp-icon.png" alt="WhatsApp" width="24" height="24">
+                            <span>Agende Agora Mesmo</span>
+                        </a>
+                    </article>
+
+                    <!-- Service 3 -->
+                    <article class="service-card" data-category="petshop">
+                        <div class="service-icon-wrapper">
+                            <img src="images/icon-shopping.png" alt="Ícone Pet Shop e Conveniência" width="32"
+                                height="32" class="service-icon">
+                        </div>
+                        <div class="service-info">
+                            <h3 class="service-name">Pet Shop e Conveniência</h3>
+                            <p class="service-text">
+                                Precisando repor algo rápido? Oferecemos acessórios, roupinhas, rações super premium,
+                                petiscos saudáveis e produtos de higiene das melhores marcas para a rotina do seu pet.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/5511978728736?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Espa%C3%A7o%20Tiquinho's%20Pet."
+                            target="_blank" rel="noopener noreferrer" class="btn-whatsapp service-card-btn">
+                            <img src="images/whatsapp-icon.png" alt="WhatsApp" width="24" height="24">
+                            <span>Agende Agora Mesmo</span>
+                        </a>
+                    </article>
+
+                    <!-- Service 4 (Especial Gatos) -->
+                    <article class="service-card" data-category="gatos">
+                        <div class="service-icon-wrapper felino-icon">
+                            <img src="images/icon-cat.png" alt="Ícone Gatos" width="32" height="32"
+                                class="service-icon">
+                        </div>
+                        <div class="service-info">
+                            <h3 class="service-name">Estética Felina Exclusiva</h3>
+                            <p class="service-text">
+                                Manejo especializado para gatos em horários calmos e silenciosos. Equipe com treinamento
+                                específico para que seu gatinho fique tranquilo e protegido durante todo o procedimento.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/5511978728736?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Espa%C3%A7o%20Tiquinho's%20Pet."
+                            target="_blank" rel="noopener noreferrer" class="btn-whatsapp service-card-btn">
+                            <img src="images/whatsapp-icon.png" alt="WhatsApp" width="24" height="24">
+                            <span>Agende Agora Mesmo</span>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 5. Gallery Section -->
+        <section id="galeria" class="gallery-section" aria-label="Galeria de Pets Atendidos">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Pets na Tiquinho's Pet Bom Clima</h2>
+                    <p class="section-subtitle">Veja a alegria dos nossos clientes após um dia de cuidados especiais</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/gallery-1-2ae397.png" alt="Pet atendido no Tiquinho's Pet" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-2.png" alt="Cão feliz após tosa e banho" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-3.png" alt="Estética e tosa de pet" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-4-1ecbb1.png" alt="Pet cheiroso e tosquiado com carinho"
+                            loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-5.png" alt="Cachorrinho bem cuidado" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-6.png" alt="Pet no Espaço Tiquinho's Pet Guarulhos" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-7.png" alt="Manejo carinhoso de pet" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-8.png" alt="Resultado impecável de banho e tosa" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5.1 Barra de Confiança / Marcas Parceiras (Inspirada na Seção de Logos da Referência) -->
+        <section class="brands-section" aria-label="Marcas de Confiança">
+            <div class="container text-center">
+                <p class="brands-title">PRODUTOS PROFISSIONAIS E COSMÉTICOS DE ALTA PERFORMANCE UTILIZADOS EM NOSSO
+                    ESPAÇO</p>
+                <div class="brands-grid">
+                    <div class="brand-item" title="Pet Society / Hydra Cosméticos">
+                        <img src="images/brands/pet-society.png" alt="Pet Society / Hydra Cosméticos"
+                            class="brand-logo-img">
+                    </div>
+                    <div class="brand-item" title="PremieRpet">
+                        <img src="images/brands/premier.png" alt="PremieRpet" class="brand-logo-img">
+                    </div>
+                    <div class="brand-item" title="Royal Canin">
+                        <img src="images/brands/Royal-Canin-Logo.svg" alt="Royal Canin" class="brand-logo-img">
+                    </div>
+                    <div class="brand-item" title="Bravecto">
+                        <img src="images/brands/bravecto.png" alt="Bravecto" class="brand-logo-img">
+                    </div>
+                    <div class="brand-item" title="NexGard">
+                        <img src="images/brands/nexgard.png" alt="NexGard" class="brand-logo-img">
+                    </div>
+                    <div class="brand-item" title="Hill's Pet Nutrition">
+                        <img src="images/brands/hills.png" alt="Hill's Pet Nutrition" class="brand-logo-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Differentials -->
+        <section id="diferenciais" class="differentials-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">
+                        Tiquinho's Pet é a<br>
+                        Escolha Certa para o Seu Pet
+                    </h2>
+                </div>
+
+                <div class="differentials-grid">
+                    <!-- Diff 1 -->
+                    <div class="diff-card">
+                        <div class="diff-header">
+                            <span class="diff-emoji" role="img" aria-label="Escudo de segurança">🛡️</span>
+                            <h3 class="diff-title">Segurança em 1º Lugar</h3>
+                        </div>
+                        <p class="diff-text">
+                            Profissionais experientes e estrutura rigorosamente limpa e adaptada para evitar fugas ou
+                            estresse.
+                        </p>
+                    </div>
+
+                    <!-- Diff 2 -->
+                    <div class="diff-card">
+                        <div class="diff-header">
+                            <span class="diff-emoji" role="img" aria-label="Coração carinho">❤️</span>
+                            <h3 class="diff-title">Atendimento Humanizado</h3>
+                        </div>
+                        <p class="diff-text">
+                            Mais do que estética, entregamos carinho de verdade. Respeitamos o tempo, a sensibilidade e
+                            a personalidade de cada cão ou gato.
+                        </p>
+                    </div>
+
+                    <!-- Diff 3 -->
+                    <div class="diff-card">
+                        <div class="diff-header">
+                            <span class="diff-emoji" role="img" aria-label="Pino de localização">📍</span>
+                            <h3 class="diff-title">Localização Privilegiada</h3>
+                        </div>
+                        <p class="diff-text">
+                            Fácil acesso e conveniência para moradores do bairro Bela Vista e arredores, em Guarulhos.
+                        </p>
+                    </div>
+
+                    <!-- Diff 4 -->
+                    <div class="diff-card">
+                        <div class="diff-header">
+                            <span class="diff-emoji" role="img" aria-label="Estrelas de brilho">✨</span>
+                            <h3 class="diff-title">Produtos de Alta Performance</h3>
+                        </div>
+                        <p class="diff-text">
+                            Usamos linhas de banho hipoalergênicas e específicas para cada tipo de pelo, evitando
+                            alergias.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Testimonials -->
+        <section id="avaliacoes" class="testimonials-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title testimonials-title">
+                        O Que os Tutores de Pets de Guarulhos Dizem Sobre Nós?
+                    </h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
+                    <article class="testimonial-card">
+                        <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+                        <blockquote class="testimonial-text">
+                            "Excelente atendimento! Levo meu cachorro lá sempre e ele volta limpinho, cheiroso e super
+                            tranquilo. Recomendo de olhos fechados na Bela Vista."
+                        </blockquote>
+                        <cite class="testimonial-author">- Tutor Satisfeito</cite>
+                    </article>
+
+                    <!-- Testimonial 2 -->
+                    <article class="testimonial-card">
+                        <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+                        <blockquote class="testimonial-text">
+                            "Profissionais muito atenciosos. A tosa do meu poodle ficou perfeita e o cuidado que eles
+                            têm passa muita segurança."
+                        </blockquote>
+                        <cite class="testimonial-author">- Tutor Satisfeito</cite>
+                    </article>
+
+                    <!-- Testimonial 3 -->
+                    <article class="testimonial-card">
+                        <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
+                        <blockquote class="testimonial-text">
+                            "O melhor banho e tosa de Guarulhos. Estrutura impecável e preço justo pelo carinho que
+                            entregam."
+                        </blockquote>
+                        <cite class="testimonial-author">- Tutor Satisfeito</cite>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Location & Quick Booking Form (Inspirado no Bloco de Formulário da Referência) -->
+        <section id="contato" class="location-section">
+            <div class="container">
+                <div class="location-card">
+                    <!-- Map Side -->
+                    <div class="location-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.887208169992!2d-46.51862592476562!3d-23.464527957973945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef563fc8a264f%3A0xc3f7a6cf8fbbcfc6!2sAv.%20Jos%C3%A9%20Ant%C3%B4nio%20Zeraibe%2C%20207%20-%20Jardim%20Bom%20Clima%2C%20Guarulhos%20-%20SP%2C%2007122-000!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Localização do Espaço Tiquinho's Pet no Google Maps">
+                        </iframe>
+                    </div>
+
+                    <!-- Interactive Booking Form Side -->
+                    <div class="location-info">
+                        <div class="location-header-block">
+                            <span class="location-tag">📅 AGENDAMENTO FÁCIL</span>
+                            <h2 class="location-title">
+                                Agende a Visita do seu Pet no Bom Clima
+                            </h2>
+                            <p class="location-desc">
+                                Preencha os campos abaixo e nosso time iniciará o atendimento imediato no WhatsApp:
+                            </p>
+                        </div>
+
+                        <!-- Dynamic WhatsApp Booking Form -->
+                        <form id="bookingForm" class="booking-form">
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="tutorName">Seu Nome</label>
+                                    <input type="text" id="tutorName" placeholder="Ex: Lucas Silva" required>
+                                </div>
+                                <div class="form-field">
+                                    <label for="petName">Nome e Raça do Pet</label>
+                                    <input type="text" id="petName" placeholder="Ex: Bob (Poodle)" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="serviceSelect">Serviço Desejado</label>
+                                    <select id="serviceSelect">
+                                        <option value="Banho Completo e Hidratação">Banho Completo e Hidratação</option>
+                                        <option value="Tosa Especializada / da Raça">Tosa Especializada / da Raça
+                                        </option>
+                                        <option value="Tosa Higiênica + Banho">Tosa Higiênica + Banho</option>
+                                        <option value="Estética Felina (Gatos)">Estética Felina (Gatos)</option>
+                                        <option value="Produtos do Pet Shop">Produtos do Pet Shop</option>
+                                    </select>
+                                </div>
+                                <div class="form-field">
+                                    <label for="preferredDate">Melhor Dia / Horário</label>
+                                    <input type="text" id="preferredDate" placeholder="Ex: Sábado às 10h">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-whatsapp form-submit-btn">
+                                <img src="images/whatsapp-icon.png" alt="WhatsApp" width="24" height="24">
+                                <span>Agende Agora Mesmo</span>
+                            </button>
+                        </form>
+
+                        <div class="location-meta-group">
+                            <div class="location-meta-item">
+                                <span class="meta-label">📍 Endereço:</span>
+                                <span class="meta-val">Av. José Antônio Zeraibe, 207 - Jardim Bom Clima</span>
+                            </div>
+                            <div class="location-meta-item">
+                                <span class="meta-label">🕒 Horário de Funcionamento:</span>
+                                <span class="meta-val">Segunda a Sábado: 09:00 às 18:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. FAQ Section -->
+        <section id="duvidas" class="faq-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">
+                        Dúvidas Frequentes sobre nosso Pet Shop e Estética Animal
+                    </h2>
+                </div>
+
+                <div class="faq-accordion" id="faqAccordion">
+                    <!-- Item 1 -->
+                    <div class="faq-item active">
+                        <button class="faq-question" aria-expanded="true">
+                            <span>O Espaço Tiquinho's Pet em Guarulhos atende gatos para banho e tosa?</span>
+                            <span class="faq-icon" aria-hidden="true">＋</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Sim! No Tiquinho's Pet nós realizamos banho e tosa para gatos com horários especiais e
+                                equipe treinada para garantir um manejo tranquilo e focado no bem-estar felino.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Preciso agendar o banho e tosa do meu pet com antecedência?</span>
+                            <span class="faq-icon" aria-hidden="true">＋</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Recomendamos o agendamento prévio pelo nosso WhatsApp para garantir que o seu pet seja
+                                atendido no melhor horário, evitando esperas e garantindo exclusividade.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Quais produtos são utilizados durante o banho?</span>
+                            <span class="faq-icon" aria-hidden="true">＋</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Utilizamos apenas marcas premium de cosmética animal, incluindo shampoos e
+                                condicionadores hipoalergênicos e adequados para diferentes tipos de pelagem e peles
+                                sensíveis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Onde fica exatamente o Tiquinho's Pet?</span>
+                            <span class="faq-icon" aria-hidden="true">＋</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Estamos localizados na Rua Birmânia, 96, no bairro Bela Vista, na cidade de Guarulhos -
+                                SP.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- 10. Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-container">
             <div class="footer-grid">
-                <div>
-                    <div class="footer-logo">🐾 Tiquinho's Pet</div>
-                    <p>Seu pet shop de confiança na Bela Vista, Guarulhos. Banho, tosa e muito cuidado para o seu melhor amigo.</p>
+                <!-- Column 1: Brand -->
+                <div class="footer-col brand-col">
+                    <a href="#" class="footer-logo-link" aria-label="Tiquinho's Pet Início">
+                        <img src="images/logo-rodape.svg" alt="Tiquinho's Pet" width="220" height="61"
+                            class="footer-logo-img">
+                    </a>
+                    <p class="footer-desc">
+                        Seu pet shop de confiança na Bela Vista, Guarulhos. Banho, tosa e muito cuidado para o seu
+                        melhor amigo.
+                    </p>
                 </div>
-                <div>
-                    <h4>Links Rápidos</h4>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col links-col">
+                    <h3 class="footer-col-title">Links Rápidos</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Início</a></li>
+                        <li><a href="#hero">Início</a></li>
                         <li><a href="#servicos">Banho e Tosa</a></li>
+                        <li><a href="#galeria">Galeria de Pets</a></li>
                         <li><a href="#diferenciais">Diferenciais</a></li>
                         <li><a href="#contato">Contato e Localização</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4>Redes Sociais</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">WhatsApp</a></li>
+
+                <!-- Column 3: Contact Info -->
+                <div class="footer-col contact-col">
+                    <h3 class="footer-col-title">Contato</h3>
+                    <ul class="footer-contact-list">
+                        <li>📍 Av. José Antônio Zeraibe, 207 - Jardim Bom Clima</li>
+                        <li>📸 @tiquinhospet</li>
+                        <li>
+                            <a href="https://wa.me/5511978728736" target="_blank" rel="noopener noreferrer"
+                                class="footer-phone-link">
+                                💬 (11) 97872-8736
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                &copy; 2026 Espaço Tiquinho's Pet. Todos os direitos reservados.
+                <hr class="footer-divider">
+                <p class="footer-copyright">
+                    © 2026 Espaço Tiquinho's Pet. Todos os direitos reservados.
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp -->
-    <a href="#" class="fab" title="Falar com Especialista">
-        <i>💬</i>
+    <!-- 11. Floating WhatsApp Button -->
+    <a href="https://wa.me/5511978728736?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Espa%C3%A7o%20Tiquinho's%20Pet."
+        class="whatsapp-floating" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp"
+        id="floatingWhatsapp">
+        <img src="images/whatsapp-icon.png" alt="WhatsApp" width="34" height="34">
+        <span class="whatsapp-tooltip">Agende pelo WhatsApp</span>
     </a>
 
+    <!-- JavaScript -->
+    <script src="main.js"></script>
 </body>
+
 </html>

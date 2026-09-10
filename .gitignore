@@ -1,0 +1,15 @@
+# Dependencies & Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Temp scrapers & raw extracts
+tiquinhos-pet-pesquisa-google.assets.Woblo/
+tiquinhos-pet-pesquisa-google.assets.Woblo.zip
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
