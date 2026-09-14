@@ -651,7 +651,7 @@ button, input, select {
 
 .solutions-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
@@ -823,19 +823,42 @@ button, input, select {
 .gallery-section {
   padding: var(--section-padding);
   background-color: var(--color-bg-warm);
+  overflow: hidden;
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.gallery-carousel-wrapper {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  display: flex;
+}
+
+.gallery-track {
+  display: flex;
   gap: 20px;
+  width: max-content;
+  animation: scroll-gallery 40s linear infinite;
+  padding: 0 10px;
+}
+
+@keyframes scroll-gallery {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 10px)); }
+}
+
+.gallery-track:hover {
+  animation-play-state: paused;
 }
 
 .gallery-item {
+  width: 300px;
   aspect-ratio: 1 / 1;
   border-radius: var(--radius-md);
   overflow: hidden;
   background-color: #EDE8E3;
+  flex-shrink: 0;
 }
 
 .gallery-item img {
@@ -1464,8 +1487,8 @@ button, input, select {
     display: none;
   }
 
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .gallery-item {
+    width: 260px;
   }
 
   .brands-grid {
@@ -1561,9 +1584,8 @@ button, input, select {
     grid-template-columns: 1fr;
   }
 
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+  .gallery-item {
+    width: 220px;
   }
 
   .location-info {
